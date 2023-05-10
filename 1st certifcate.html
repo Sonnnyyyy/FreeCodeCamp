@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style1.css">
+  <meta charset="UTF-8">
+  <title> Survey Form </title>
+  </head>
+  <div class="top">
+<h1 id="title"> Open Source Survey </h1>
+<p id="description"> This is a survey for open source/public source user </p> </div>
+
+
+
+<form id="survey-form">
+  <div class="group">
+  <label for="name" id="name-label">
+    Name </label>
+    <input class="form-control" name="name" id="name" type="text" placeholder="Enter your Name"required ></input>  </div>
+    
+
+
+
+      <div class="group">
+    <label for="email" id="email-label"> Email </label>
+    <input placeholder="Enter your Email"class="form-control" id="email" type="email" required> </input> </div>
+      
+
+
+
+      <div class="group">
+      <label for="number" id="number-label">Age (Optional) </label>
+        <input placeholder="Enter your Age"class="form-control" name="age" min="12" max="100" id="number" type="number"></input>
+        </div>
+        
+
+
+        <div class="group">
+          <p> What is your current role? </p>
+        <select id="dropdown" name="role" class="form-control" required> 
+          <option disabled selected value>Select</option>
+          <option value="student">Student</option>
+          <option value="full-learner">Full time Learner</option>
+          <option value="full-job">Full time Job</option>
+          <option value="PreferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select> </div>
+
+
+
+        <div class="group">
+        <p> Do you use Open Source Software (Cost-free Software)? </p>
+<label>
+<input name="user-recommend"type="radio" value="yes" class="input-radio" checked>Yes</label>
+<label><input name="user-recommend"type="radio" value="no" class="input-radio">no</label>
+<input name="user-recommend"type="radio" value="sometimes" class="input-radio">Sometimes</label>   </div>  
+
+
+
+<div class="group">
+  <p> Would you recommend Open Source Software to a friend? </p> 
+  <select id="drop-down" name="recommend" class="form-control" required>
+    <option disabled selected value> Select </option>
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+    <option value="maybe">maybe</option>
+    </select> </div>
+
+
+
+    <div class="group">
+      <p> Why do you use Open Source Software? (check all that apply)</p>
+      <label><input value="For School purposes" name="prefer" type="checkbox" class="input-checkbox"> For School Purposes </input> </label>
+      <label><input value="For Research purposes" name="prefer" type="checkbox" class="input-checkbox"> For Research Purposes </input> </label>
+      <label><input value="To learn" name="prefer" type="checkbox" class="input-checkbox"> For Learning Purposes </input> </label>
+      <label><input value="Just Trying Out" name="prefer" type="checkbox" class="input-checkbox"> Just Trying Out </input> </label>
+      </div>
+
+
+
+      <div class="group">
+        <p> Any comments about this survey?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter Comment here...">
+          </textarea> </div>
+         
+
+
+         <div class="group">
+           <button type="submit" id="submit" class="submit-button">Submit
+             </button> </div>
+  </form>
+  </html>
